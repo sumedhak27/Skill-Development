@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        android:text="STUDENT DETAILS"
+        android:background="@drawable/rounded_corner_textview"
+
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_margin="10dp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="First Name : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:id="@+id/firstName"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Middle Name : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:id="@+id/middleName"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Last Name : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Date of Birth : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:id="@+id/dob"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Gr Number : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:id="@+id/grNo"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Year : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:id="@+id/academicYear"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Roll No : "
+        android:layout_margin="2dp"
+        android:layout_below="@id/dob"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:id="@+id/rollNo"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Email : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:id="@+id/email"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Mobile Number : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:id="@+id/mobileNumber"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Caste : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:id="@+id/caste"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Skills : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:id="@+id/skills"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Branch : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:id="@+id/branch"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="shift : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:id="@+id/shift"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        android:background="@drawable/rounded_corner_textview"
+        android:text="ACADEMIC DETAILS"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_margin="10dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_height="wrap_content"
+        android:text="10 Marks : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:id="@+id/marks10"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_height="wrap_content"
+        android:text="12 Marks : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:id="@+id/marks12"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="FE CGPA : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:id="@+id/feCgpa"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_height="wrap_content"
+        android:text="SE CGPA : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:id="@+id/seCgpa"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TE CGPA : "
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:id="@+id/teCgpa"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="BE CGPA : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/beCgpa"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        android:background="@drawable/rounded_corner_textview"
+        android:text="FAMILY DETAILS"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_margin="10dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="FATHER "
+        android:textAlignment="center"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Name : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:id="@+id/fatherName"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Designation : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fatherDesignation"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_height="wrap_content"
+        android:text="Profession : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:id="@+id/fatherProfession"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Email :"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fatherEmail"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Mobile Number : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fatherMobileNumber"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="MOTHER"
+        android:textAlignment="center"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Name : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:id="@+id/motherName"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Designation : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/motherDesignation"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Profession : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:id="@+id/motherProfession"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Email :"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/motherEmail"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number : "
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/motherMobileNumber"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        android:background="@drawable/rounded_corner_textview"
+        android:text="PERMANENT ADDRESS"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_margin="10dp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Address : "
+        android:layout_margin="2dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/perAddress"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:lines="20"
+        android:minLines="5"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical"
+        android:layout_margin="2dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Area : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:id="@+id/perArea"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_margin="2dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="State : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:id="@+id/perState"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_margin="2dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="City : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/perCity"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_margin="2dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Pin Code : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/perPinCode"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_margin="2dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        android:background="@drawable/rounded_corner_textview"
+        android:text="CURRENT ADDRESS"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_margin="10dp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Address : "
+        android:layout_margin="2dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:lines="20"
+        android:id="@+id/curAddress"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:minLines="5"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical"
+        android:layout_margin="2dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Area : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:id="@+id/curArea"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_margin="2dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="State : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:id="@+id/curState"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_margin="2dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="City : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:id="@+id/curCity"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_margin="2dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_height="wrap_content"
+        android:text="Pin Code : "
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_height="wrap_content"
+        android:id="@+id/curPinCode"
+        android:background="@drawable/rounded_corner_textview_search_activity"
+        android:layout_margin="2dp"
+        />
+
+
+</LinearLayout>

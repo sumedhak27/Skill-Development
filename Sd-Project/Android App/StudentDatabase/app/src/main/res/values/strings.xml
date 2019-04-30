@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">StudentDatabase</string>
+
+    <string name="firstNameError">Enter a valid First name</string>
+    <string name="middleNameError">Enter a valid Middle name</string>
+    <string name="lastNameError">Enter a valid Last name</string>
+    <string name="nameError">Enter a valid name</string>
+    <string name="emailError">Enter a valid email</string>
+    <string name="mobileError">Enter a valid mobile</string>
+    <string name="dateError">Enter a valid date</string>
+    <string name="rollError">Enter a valid roll number</string>
+    <string name="casteError">Enter a valid caste name</string>
+    <string name="marks">Enter valid percentage</string>
+    <string name="cgpa">Enter zero if not known</string>
+
+
+    <array name="Fields">
+        <item>firstName</item>
+        <item>grNo</item>
+        <item>rollNo</item>
+    </array>
+
+    <array name="Branch">
+        <item>Computer Science</item>
+        <item>ENTC</item>
+        <item>IT</item>
+        <item>Mechanical</item>
+        <item>Civil</item>
+    </array>
+
+    <array name="Shift">
+        <item>First Shift</item>
+        <item>Second Shift</item>
+    </array>
+
+
+
+</resources>

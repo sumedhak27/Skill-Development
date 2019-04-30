@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <meta name="theme-color" content="#314C5A" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <form onclick="return submitFunction()">
+        <h1>STUDENT INFORMATION</h1> 
+        <div class="container">
+            <div class="borderstyle">
+                <div class="h2class">
+                    <h2>PERSONAL INFORMATION</h2>
+                </div>
+                <div class="card">
+                    <label for="name"> NAME </label>
+                    <input type="text" id="fname" name="firstname" placeholder="firstname" required>
+                    <input type="text" id="mname" name="middlename" placeholder="middlename" requireds>
+                    <input type="text" id="lname" name="lastname" placeholder="lastname" required>
+        
+                    <label for="grno">GR No. </label>
+                    <input type="text" id="grno" name="grno" placeholder="Gr no." required pattern="[0-9]{2}[u|U][0-9]{3}">
+        
+                    <label for="rollno">ROLL No. </label>
+                    <input type="number" id="rollno" name="rollno" placeholder="Roll no.(Eg.223012)" required>
+        
+                    <label for="acedemicyear">ACADEMIC YEAR </label>
+                    <select id="acedemicyear" name="acedemicyear" required>
+                        <option value="" disabled selected>Choose Year</option>
+                        <option value="fFYBTech">FYBTech</option>
+                        <option value="SYBtech">SYBtech</option>
+                        <option value="T.E">T.E</option>
+                        <option value="B.E">B.E</option> 
+                    </select>
+        
+                    <label for="shift">SHIFT </label>
+                    <select id="shift" name="shift" required>
+                        <option value="" disabled selected>Choose Shift</option>
+                        <option value="firstshift">First Shift</option>
+                        <option value="secondshift">Second Shift</option> 
+                    </select>
+        
+                    <label for="branch">BRANCH </label>
+                    <select name="branch" id="branch" required>
+                        <option value="" disabled selected>Choose Branch</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="entc">Electronics And Telecommunication</option>
+                        <option value="civil">Civil Engineering</option>
+                        <option value="mech">Mechanical Engineering</option>
+                        <option value="it">Information Technology</option>
+                    </select>
+        
+                    <label for="bdate">BIRTHDATE</label>
+                    <input type="date" id="bdate" name="bdate" required>
+        
+                    <label for="mobile">MOBILE No. </label>
+                    <input type="tel" id="mobile" name="mobile" maxlength="10" required="number" required>
+        
+                    <label for="email">EMAIL ID</label>
+                    <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        
+                    <label for="caste">CASTE</label>
+                    <input type="text" id="caste" name="caste" placeholder="caste" required>
+        
+                </div>
+            </div>
+
+            <div class="borderstyle">
+                <div class="h2class">
+                    <h2>FAMILY DETAILS</h2>
+                </div>
+                <div class="card">
+                    <h3>FATHER </h3>
+                    <label for="fathername">NAME</label>
+                    <input type="text" id="fathername" name="fathername" required>
+                    <label for="profession"> PROFESSION </label>
+                    <input type="text" id="fatherprofession" name="fatherprofession" required>
+                    <label for="designation"> DESIGNATION </label>
+                    <input type="text" id="fatherdesignation" name="designation" >
+                    <label for="mobile">MOBILE No. </label>
+                    <input type="tel" id="fathermobile" name="mobile" maxlength="10" required="number" required>
+                    <label for="email">EMAIL ID</label>
+                    <input type="email" id="fatheremail" name="email"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        
+                    <h3>MOTHER </h3>
+                    <label for="mothersname">NAME </label>
+                    <input type="text" id="mothername" name="mothername" required>
+                    <label for="profession"> PROFESSION </label>
+                    <input type="text" id="motherprofession" name="profession" required>
+                    <label for="designation"> DESIGNATION </label>
+                    <input type="text" id="motherdesignation" name="designation">
+                    <label for="mobile">MOBILE No. </label>
+                    <input type="tel" id="mothermobile" name="mobile" maxlength="10" required="number" required>
+                    <label for="email">EMAIL ID</label>
+                    <input type="email" id="motheremail" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                </div>
+            </div>
+
+            <div class="borderstyle">
+                <div class="h2class">
+                    <h2>COMPLETE POSTAL ADDRESS</h2>
+                </div>
+                <div class="card">
+                    <h3>PERMANENT ADDRESS</h3>
+                    <label for="perAddress">ADDRESS</label>
+                    <textarea name="perAddress" id="perAddress" required></textarea>
+                    
+                    <label for="perState">STATE </label>
+                    <input type="text" id="perState" required> 
+                    
+                    <label for="perCity">CITY</label>
+                    <input type="text" id="perCity" required>  
+    
+                    <label for="perPinCode">PIN CODE </label>
+                    <input type="number" id="perPinCode" required>
+    
+                    <label for="PerPinCode"></label>
+                    <input type="radio"name="perArea" value="urban" checked required> URBAN<br>
+                    <input type="radio"name="perArea" value="rural" > RURAL<br>
+                    <br>
+                    <input type="checkbox" name="isAddressSame"  id="isAddressSame">Current Address is same as permanent address.<br>
+        
+                    <h3>CURRENT ADDRESS</h3>
+                    <label for="currAddress">ADDRESS</label>
+                    <textarea name="currAddress" id="currAddress" required></textarea>
+    
+                    <label for="currState">STATE </label>
+                    <input type="text" id="currState" required> 
+                    
+                    <label for="currCity">CITY</label>
+                    <input type="text" id="currCity" required> 
+    
+                    <label for="currPinCode">PIN CODE</label>
+                    <input type="number" id="currPinCode" required>
+    
+                    <label for="currPinCode"></label>
+                    <input type="radio"name="currArea" value="urban" checked required> URBAN<br>
+                    <input type="radio"name="currArea" value="rural" > RURAL<br>
+                </div>
+            </div>
+    
+            <div class="borderstyle">
+                <div class="h2class">
+                    <h2>ACADEMIC DETAILS</h2>
+                </div>        
+                <div class="card">
+                    
+                    
+                    <label for="tenthMarks">10th Percentage</label>
+                    <input type="number" max="100" min="0" step="0.01" id="tenthMarks" required>
+                    <label for="twelthMarks">12th Percentage</label>
+                    <input type="number" max="100" min="0" step="0.01" id="twelthMarks" required>
+                    <label for="fycgpa">First Year CGPA</label>
+                    <input type="number" min="0" max="10" step="0.01" id="fycgpa">
+                    <label for="sycgpa">Second Year CGPA</label>
+                    <input type="number" min="0" max="10" step="0.01" id="sycgpa">
+                    <label for="tycgpa">Third Year CGPA</label>
+                    <input type="number" min="0" max="10" step="0.01" id="tycgpa">
+                    <label for="becgpa">Final Year CGPA</label>
+                    <input type="number" min="0" max="10" step="0.01" id="becgpa">
+                </div>
+            </div>
+            
+            <div class="borderstyle">
+                <div class="h2class"></div>
+                <div class="card">
+                    <h3>SKILLS</h3>
+                    <textarea id="skills" rows="6" cols="9"></textarea>
+                    <h3>INTERNSHIPS</h3>
+                    <textarea id="internships" rows="6"></textarea>
+                </div>
+            </div>
+        </div>        
+
+        <div class="btn">
+            <button id="submit" type="submit">Submit</button>
+        </div>
+    </form>
+
+
+
+     <script src="index.js"></script>
+</body>
+
+</html>
